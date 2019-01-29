@@ -1,7 +1,7 @@
 ---
 title: 'Site Created!'
-description: Study of users of the website
-date: '2019-01-29'
+description: Introduction
+date: '2019-01-29T0900'
 image: site-start.png
 ---
 
