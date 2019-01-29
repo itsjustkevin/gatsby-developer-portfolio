@@ -17,7 +17,9 @@ const IndexPage = () => (
         `designer`,
       ]}
     />
+
     <h1>Hi people</h1>
+    <p>Index page</p>
   </Layout>
 )
 
