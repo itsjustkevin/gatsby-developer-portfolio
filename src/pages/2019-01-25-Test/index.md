@@ -1,8 +1,8 @@
 ---
 title: 'My first Blog post'
 description: This post is related to the gatsbyjs
-date: '2019-25-01'
-image: ''
+date: '2019-01-25'
+image: sunset.jpg
 ---
 
 Don't build a website with last decade's tech. The future of the web is mobile,
