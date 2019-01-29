@@ -2,7 +2,7 @@
 title: 'My second Blog post'
 description: This post is related to the gatsbyjs
 date: '2019-01-25'
-image: ''
+image:
 ---
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
