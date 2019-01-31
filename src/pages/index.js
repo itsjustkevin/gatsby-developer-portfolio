@@ -3,6 +3,9 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import './index.css'
+import { FaGithubSquare } from 'react-icons/fa'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa'
 
 const IndexPage = () => (
   <Layout>
@@ -21,15 +24,27 @@ const IndexPage = () => (
 
     <h1 className="hero-primary-text">Kevin Chisholm</h1>
     <p className="hero-sub-text">Designer | Developer | Innovator</p>
+    <div className="contact-icons">
+      <a href="https://github.com/itsjustkevin">
+        <FaGithubSquare size={20} />
+      </a>
+      <a href="https://www.linkedin.com/in/kevin-chisholm/">
+        <FaLinkedinIn size={20} />
+      </a>
+      <a href="mailto:kevinjchisholm@gmail.com">
+        <FaEnvelope size={20} />
+      </a>
+    </div>
 
     <div className="section">
       <p className="section-label">My Story</p>
       <p className="section-content">
-        Hi, I'm <strong>Kevin</strong>! I'm a web developer and designer from
-        the great state of Texas. For the last eight years I've been proudly
-        serving in the United States Navy, based in Yokosuka, Japan as a Radar
-        Systems Technician, Weapon Systems Technician, Explosives Safety
-        Manager, Instructional Designer, and Instructor.
+        Hi, I'm <strong>Kevin</strong>! I'm a <strong>web developer</strong> and{' '}
+        <strong>designer</strong> from the great state of Texas. For the last
+        eight years I've been proudly serving in the United States Navy, based
+        in Yokosuka, Japan as a Radar Systems Technician, Weapon Systems
+        Technician, Explosives Safety Manager, Instructional Designer, and
+        Instructor.
         <br />
         <br />
         My love for development came when I was given the opportunity to look

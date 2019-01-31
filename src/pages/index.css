@@ -31,3 +31,17 @@
 .section-skill-label {
   font-weight: 500;
 }
+
+.contact-icons {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  padding-bottom: 22px;
+}
+.contact-icons a {
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
