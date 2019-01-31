@@ -3,17 +3,17 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = () => (
-  <div>
-    <div>
+  <div className="nav-bar">
+    <nav className="site-nav">
       <ul>
-        <li>
+        <li className="nav-left-item">
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className="nav-right-item">
           <Link to="/blog">Blog</Link>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
 )
 

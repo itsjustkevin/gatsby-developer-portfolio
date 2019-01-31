@@ -1,0 +1,33 @@
+.hero-primary-text {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.hero-sub-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 22px;
+}
+
+.section {
+  padding-bottom: 22px;
+}
+
+.section-label {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 22px;
+}
+
+.section-content {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.section-skill-label {
+  font-weight: 500;
+}

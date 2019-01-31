@@ -1,0 +1,42 @@
+body {
+  margin: 1.8em;
+}
+
+.blog-page-header {
+  position: relative;
+  display: block;
+  font-size: 27px;
+  font-weight: 700;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.post {
+  padding-bottom: 22px;
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.post-date {
+  color: #777;
+  padding-bottom: 2em;
+}
+
+/*
+@media screen only (max-device-width: 320px), and (orientation: portrait) {
+  .blog-page-header {
+    font-size: 22px;
+  }
+
+  .post-title {
+    font-size: 18px;
+  }
+
+  .post-text {
+    font-size: 12px;
+  }
+}
+*/
