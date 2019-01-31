@@ -1,8 +1,7 @@
+import './index.css'
 import React from 'react'
-
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import './index.css'
 import { FaGithubSquare } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaEnvelope } from 'react-icons/fa'
@@ -86,7 +85,7 @@ const IndexPage = () => (
     <div className="section">
       <p className="section-label">Resume</p>
       <a
-        href="../../public/static/resume/Kevin_Chisholm_Resume.pdf"
+        href="/resume/Kevin_Chisholm_Resume.pdf"
         download="Kevin_Chisholm_Resume.pdf"
       >
         Download Resume
