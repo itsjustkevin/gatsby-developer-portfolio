@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import './blog-post.css'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import { FaArrowAltCircleLeft } from 'react-icons/fa'
+
 function BlogPost(props) {
   const post = props.data.markdownRemark
   const { title } = post.frontmatter
@@ -10,11 +12,18 @@ function BlogPost(props) {
     <Layout>
       <div class="post-container">
         <h1 className="blog-post-title">{title}</h1>
-        <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+        <div className="hero-image">
+          <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+        </div>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
+      </div>
+      <div className="back-icon">
+        <a href="/blog">
+          <FaArrowAltCircleLeft size={35} />
+        </a>
       </div>
     </Layout>
   )

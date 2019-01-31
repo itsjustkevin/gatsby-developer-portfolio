@@ -50,6 +50,10 @@ ul {
   list-style: none;
 }
 
+.nav-bar {
+  padding-top: 22px;
+}
+
 .nav-right-item {
   float: right;
 }
