@@ -84,6 +84,16 @@ const IndexPage = () => (
     </div>
 
     <div className="section">
+      <p className="section-label">Resume</p>
+      <a
+        href="../../public/static/resume/Kevin_Chisholm_Resume.pdf"
+        download="Kevin_Chisholm_Resume.pdf"
+      >
+        Download Resume
+      </a>
+    </div>
+
+    <div className="section">
       <p className="section-label">Projects</p>
       <p className="section-content">Coming soon ...</p>
     </div>
