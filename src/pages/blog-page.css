@@ -24,19 +24,3 @@ body {
   color: #777;
   padding-bottom: 2em;
 }
-
-/*
-@media screen only (max-device-width: 320px), and (orientation: portrait) {
-  .blog-page-header {
-    font-size: 22px;
-  }
-
-  .post-title {
-    font-size: 18px;
-  }
-
-  .post-text {
-    font-size: 12px;
-  }
-}
-*/

@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import './blog-post.css'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 function BlogPost(props) {
@@ -8,15 +9,19 @@ function BlogPost(props) {
   return (
     <Layout>
       <div class="post-container">
-        <h1>{title}</h1>
+        <h1 className="blog-post-title">{title}</h1>
         <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </div>
     </Layout>
   )
 }
 
 export default BlogPost
+
 export const query = graphql`
   query PostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
