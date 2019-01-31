@@ -1,4 +1,4 @@
-import './index.css'
+import './layout.css'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'

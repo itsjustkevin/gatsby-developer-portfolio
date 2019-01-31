@@ -57,3 +57,21 @@ ul {
 .nav-right-item {
   float: right;
 }
+
+@media only screen and (min-device-width: 768px) {
+  html {
+    max-width: 80%;
+    margin: auto;
+    font-size: 21px;
+  }
+
+  body {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .main {
+    max-width: 60%;
+    margin: auto;
+  }
+}
