@@ -58,6 +58,15 @@ ul {
   float: right;
 }
 
+a.active {
+  padding-bottom: 3px;
+  border-bottom: 3px solid #ff2247;
+}
+
+strong {
+  color: #ff2247;
+}
+
 @media only screen and (min-device-width: 768px) {
   html {
     max-width: 80%;

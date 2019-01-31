@@ -54,8 +54,8 @@ const IndexPage = () => (
           feedback on future features. From that moment, I stuck my head in the
           books and began studying the <strong>Ruby</strong> programming
           language, and enrolled in school to obtain a Bachelors of Science in
-          Computer Science, all while being a top perfomer and innovator at my
-          job.
+          Computer Science, all while being a top perfomer and innovator in my
+          current role.
           <br />
           <br />
           The challenge of software engineering and design have both become my{' '}
