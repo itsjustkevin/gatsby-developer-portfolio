@@ -10,20 +10,22 @@ function BlogPost(props) {
   const { title } = post.frontmatter
   return (
     <Layout>
-      <div class="post-container">
-        <h1 className="blog-post-title">{title}</h1>
-        <div className="hero-image">
-          <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+      <div className="main">
+        <div class="post-container">
+          <h1 className="blog-post-title">{title}</h1>
+          <div className="hero-image">
+            <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+          </div>
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
         </div>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
-      </div>
-      <div className="back-icon">
-        <a href="/blog">
-          <FaArrowAltCircleLeft size={35} />
-        </a>
+        <div className="back-icon">
+          <a href="/blog">
+            <FaArrowAltCircleLeft size={35} />
+          </a>
+        </div>
       </div>
     </Layout>
   )

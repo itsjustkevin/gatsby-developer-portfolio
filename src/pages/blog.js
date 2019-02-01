@@ -8,16 +8,18 @@ const BlogPage = props => {
   return (
     <div>
       <Layout>
-        <div className="blog-page-header">Kevin's Thoughts ...</div>
-        {postList.edges.map(({ node }, i) => (
-          <Link to={node.fields.slug} className="link">
-            <div className="post">
-              <p className="post-title">{node.frontmatter.title}</p>
-              <span className="post-date">{node.frontmatter.date}</span>
-              <p className="post-text">{node.excerpt}</p>
-            </div>
-          </Link>
-        ))}
+        <div className="main">
+          <div className="blog-page-header">Kevin's Thoughts ...</div>
+          {postList.edges.map(({ node }, i) => (
+            <Link to={node.fields.slug} className="link">
+              <div className="post">
+                <p className="post-title">{node.frontmatter.title}</p>
+                <span className="post-date">{node.frontmatter.date}</span>
+                <p className="post-text">{node.excerpt}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
       </Layout>
     </div>
   )

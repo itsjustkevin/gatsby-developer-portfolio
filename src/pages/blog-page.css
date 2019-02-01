@@ -5,7 +5,6 @@ body {
 .blog-page-header {
   position: relative;
   display: block;
-  font-size: 27px;
   font-weight: 700;
   text-align: center;
   padding-top: 22px;
@@ -24,4 +23,12 @@ body {
 .post-date {
   color: #777;
   padding-bottom: 2em;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .blog-page-header {
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
 }
