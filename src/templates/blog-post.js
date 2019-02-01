@@ -21,11 +21,6 @@ function BlogPost(props) {
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
         </div>
-        <div className="back-icon">
-          <a href="/blog">
-            <FaArrowAltCircleLeft size={35} />
-          </a>
-        </div>
       </div>
     </Layout>
   )

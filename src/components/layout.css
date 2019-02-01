@@ -72,6 +72,10 @@ strong {
   color: #ff2247;
 }
 
+.footer {
+  text-align: center;
+}
+
 @media only screen and (min-device-width: 768px) {
   html {
     max-width: 80%;
@@ -91,10 +95,14 @@ strong {
 
   .nav-bar {
     position: fixed;
-    width: 70%;
+    width: 60%;
     margin: auto;
     right: 0;
     left: 0;
+  }
+
+  .nav-bar li a {
+    font-size: 1rem;
   }
 
   .footer {

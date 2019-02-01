@@ -11,13 +11,6 @@
   padding-bottom: 22px;
 }
 
-.back-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 22px;
-}
-
 @media only screen and (min-device-width: 768px) {
   .blog-post-title {
     font-size: 2rem;
