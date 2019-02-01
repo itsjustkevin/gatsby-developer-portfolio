@@ -25,10 +25,10 @@ const IndexPage = () => (
       <h1 className="hero-primary-text">Kevin Chisholm</h1>
       <p className="hero-sub-text">Designer | Developer | Innovator</p>
       <div className="contact-icons">
-        <a href="https://github.com/itsjustkevin">
+        <a href="https://github.com/itsjustkevin" target="_blank">
           <FaGithubSquare size={20} />
         </a>
-        <a href="https://www.linkedin.com/in/kevin-chisholm/">
+        <a href="https://www.linkedin.com/in/kevin-chisholm/" target="_blank">
           <FaLinkedinIn size={20} />
         </a>
         <a href="mailto:kevinjchisholm@gmail.com">

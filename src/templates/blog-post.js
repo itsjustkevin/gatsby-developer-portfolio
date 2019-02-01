@@ -3,7 +3,6 @@ import Layout from '../components/layout'
 import './blog-post.css'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
-import { FaArrowAltCircleLeft } from 'react-icons/fa'
 
 function BlogPost(props) {
   const post = props.data.markdownRemark
