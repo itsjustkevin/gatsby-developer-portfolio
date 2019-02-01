@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import PageTransition from 'gatsby-plugin-page-transitions'
 import './blog-page.css'
 import Layout from '../components/layout'
 
@@ -8,20 +7,18 @@ const BlogPage = props => {
   const postList = props.data.allMarkdownRemark
   return (
     <Layout>
-      <PageTransition>
-        <div className="main">
-          <div className="blog-page-header">The Process</div>
-          {postList.edges.map(({ node }, i) => (
-            <Link to={node.fields.slug} className="link">
-              <div className="post">
-                <p className="post-title">{node.frontmatter.title}</p>
-                <span className="post-date">{node.frontmatter.date}</span>
-                <p className="post-text">{node.excerpt}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </PageTransition>
+      <div className="main">
+        <div className="blog-page-header">The Process</div>
+        {postList.edges.map(({ node }, i) => (
+          <Link to={node.fields.slug} className="link">
+            <div className="post">
+              <p className="post-title">{node.frontmatter.title}</p>
+              <span className="post-date">{node.frontmatter.date}</span>
+              <p className="post-text">{node.excerpt}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </Layout>
   )
 }
