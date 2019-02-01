@@ -20,10 +20,12 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           {children}
-          <footer>
-            © {new Date().getFullYear()}, Kevin Jamaul Chisholm
-            {` `}
-          </footer>
+          <div className="footer">
+            <footer>
+              © {new Date().getFullYear()} Kevin Jamaul Chisholm
+              {` `}
+            </footer>
+          </div>
         </div>
       </>
     )}

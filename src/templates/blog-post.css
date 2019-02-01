@@ -17,3 +17,10 @@
   justify-content: center;
   padding-bottom: 22px;
 }
+
+@media only screen and (min-device-width: 768px) {
+  .blog-post-title {
+    font-size: 2rem;
+    padding-top: 4rem;
+  }
+}

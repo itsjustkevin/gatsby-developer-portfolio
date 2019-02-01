@@ -5,6 +5,7 @@ body {
 .blog-page-header {
   position: relative;
   display: block;
+  font-size: 27px;
   font-weight: 700;
   text-align: center;
   padding-top: 22px;
@@ -12,7 +13,8 @@ body {
 }
 
 .post {
-  padding-bottom: 22px;
+  margin-bottom: 22px;
+  padding-left: 10px;
 }
 
 .post-title {
@@ -28,7 +30,16 @@ body {
 @media only screen and (min-device-width: 768px) {
   .blog-page-header {
     font-size: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  .post:hover {
+    transition-duration: 0.4s;
+    border-left: 10px solid #ff2247;
+  }
+
+  .post:active {
+    transform: translateX(-4px);
+    box-shadow: none;
   }
 }

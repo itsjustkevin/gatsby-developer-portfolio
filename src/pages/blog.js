@@ -9,7 +9,7 @@ const BlogPage = props => {
     <div>
       <Layout>
         <div className="main">
-          <div className="blog-page-header">Kevin's Thoughts ...</div>
+          <div className="blog-page-header">The Process</div>
           {postList.edges.map(({ node }, i) => (
             <Link to={node.fields.slug} className="link">
               <div className="post">

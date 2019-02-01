@@ -52,6 +52,11 @@ ul {
 
 .nav-bar {
   padding-top: 22px;
+  margin: auto;
+}
+
+.nav-left-item {
+  float: left;
 }
 
 .nav-right-item {
@@ -81,6 +86,19 @@ strong {
 
   .main {
     max-width: 60%;
+    margin: auto;
+  }
+
+  .nav-bar {
+    position: fixed;
+    width: 70%;
+    margin: auto;
+    right: 0;
+    left: 0;
+  }
+
+  .footer {
+    width: 60%;
     margin: auto;
   }
 }
