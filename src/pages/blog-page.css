@@ -40,6 +40,8 @@ body {
 
   .post:active {
     transform: translateX(-4px);
+    border-left: 2px solid #ff2247;
+    transition-duration: 0.2s;
     box-shadow: none;
   }
 }
