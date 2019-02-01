@@ -1,7 +1,8 @@
 import React from 'react'
+import PageTransition from 'gatsby-plugin-page-transitions'
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import './blog-post.css'
-import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 
 function BlogPost(props) {
@@ -9,18 +10,20 @@ function BlogPost(props) {
   const { title } = post.frontmatter
   return (
     <Layout>
-      <div className="main">
-        <div class="post-container">
-          <h1 className="blog-post-title">{title}</h1>
-          <div className="hero-image">
-            <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+      <PageTransition>
+        <div className="main">
+          <div class="post-container">
+            <h1 className="blog-post-title">{title}</h1>
+            <div className="hero-image">
+              <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
+            </div>
+            <div
+              className="blog-post-content"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
           </div>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
         </div>
-      </div>
+      </PageTransition>
     </Layout>
   )
 }

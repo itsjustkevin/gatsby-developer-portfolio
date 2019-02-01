@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import PageTransition from 'gatsby-plugin-page-transitions'
 import './blog-page.css'
 import Layout from '../components/layout'
 
 const BlogPage = props => {
   const postList = props.data.allMarkdownRemark
   return (
-    <div>
-      <Layout>
+    <Layout>
+      <PageTransition>
         <div className="main">
           <div className="blog-page-header">The Process</div>
           {postList.edges.map(({ node }, i) => (
@@ -20,8 +21,8 @@ const BlogPage = props => {
             </Link>
           ))}
         </div>
-      </Layout>
-    </div>
+      </PageTransition>
+    </Layout>
   )
 }
 export default BlogPage
