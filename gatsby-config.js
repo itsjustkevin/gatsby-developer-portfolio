@@ -11,7 +11,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
     'gatsby-plugin-offline',
-    'gatsby-plugin-page-transitions',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
