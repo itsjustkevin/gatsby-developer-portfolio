@@ -53,6 +53,7 @@ ul {
 .nav-bar {
   padding-top: 22px;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .nav-left-item {
@@ -76,6 +77,10 @@ strong {
   text-align: center;
 }
 
+@media only screen and (max-device-width: 768px) {
+}
+
+/* Desktop and Tablet */
 @media only screen and (min-device-width: 768px) {
   html {
     max-width: 80%;
