@@ -95,12 +95,7 @@ const IndexPage = () => (
 
       <div className="section">
         <p className="section-label">Resume</p>
-        <a
-          href="/resume/Kevin_Chisholm_Resume.pdf"
-          download="Kevin_Chisholm_Resume.pdf"
-        >
-          Download Resume
-        </a>
+        <a href="#">Download Resume</a>
       </div>
 
       <div className="section">
