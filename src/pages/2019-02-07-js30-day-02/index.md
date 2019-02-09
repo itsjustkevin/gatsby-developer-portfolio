@@ -2,7 +2,7 @@
 title: 'JS 30 Day 02 | CSS and JS Clock'
 description: Second day of the js30 challenge by wes bos
 date: '2019-02-07T0900'
-image: Capture.png
+image: Capture.PNG
 ---
 
 # Day 2 - CSS and JavaScript Clock

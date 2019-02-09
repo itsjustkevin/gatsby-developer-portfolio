@@ -2,7 +2,7 @@
 title: 'JS 30 Day 01 | JavaScript Drum Kit'
 description: First day of the js30 challenge by wes bos
 date: '2019-02-06T0900'
-image: Capture.png
+image: Capture.PNG
 ---
 
 # Day 1 - JavaScript Drum Kit

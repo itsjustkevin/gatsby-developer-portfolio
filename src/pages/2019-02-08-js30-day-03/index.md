@@ -2,7 +2,7 @@
 title: 'JS 30 Day 03 | Playing with CSS variables and JavaScript'
 description: Third day of the js30 challenge by wes bos
 date: '2019-02-08T0900'
-image: Capture.png
+image: Capture.PNG
 ---
 
 # Day 3 - Playing with CSS Variables and JS
