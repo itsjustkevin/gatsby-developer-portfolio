@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a945bd13-c997-4508-9ae1-7ec072c30db8/deploy-status)](https://app.netlify.com/sites/amazing-northcutt-03edd8/deploys)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+
 ### Hi everyone!
 
 Welcome to my developer portfolio site where you can learn a little about me and what I do.  As a brief introduction, I'm Kevin, a software engineer working as a Radar Systems Engineer in the Navy.  I spend most of my time outside of work doing web development.
