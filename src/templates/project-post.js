@@ -1,17 +1,25 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
-import './blog-post.css'
+import './project-post.css'
 import { graphql } from 'gatsby'
+import { FaGithubSquare } from 'react-icons/fa'
 
-function BlogPost(props) {
+function ProjectPost(props) {
   const post = props.data.markdownRemark
-  const { title } = post.frontmatter
+  const { title, github } = post.frontmatter
   return (
     <Layout>
       <div className="main">
-        <div class="post-container">
-          <h1 className="blog-post-title">{title}</h1>
+        <div className="post-container">
+          <h1 className="blog-post-title">
+            {title}
+            <span className="github-icon">
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                <FaGithubSquare size={40} />
+              </a>
+            </span>
+          </h1>
           <div className="hero-image">
             <Img fluid={post.frontmatter.image.childImageSharp.fluid} />
           </div>
@@ -25,7 +33,7 @@ function BlogPost(props) {
   )
 }
 
-export default BlogPost
+export default ProjectPost
 
 export const query = graphql`
   query PostQuery($slug: String!) {
@@ -34,6 +42,7 @@ export const query = graphql`
       frontmatter {
         title
         description
+        github
         image {
           childImageSharp {
             resize(width: 1500, height: 1500) {

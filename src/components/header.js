@@ -13,8 +13,8 @@ const Header = () => (
           </Link>
         </li>
         <li className="nav-right-item">
-          <Link to="/blog" activeClassName="active">
-            Blog
+          <Link to="/projects" activeClassName="active">
+            Projects
           </Link>
         </li>
       </ul>

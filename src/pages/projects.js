@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-import './blog-page.css'
+import './project-page.css'
 import Layout from '../components/layout'
 
-const BlogPage = props => {
+const ProjectPage = props => {
   const postList = props.data.allMarkdownRemark
   return (
     <Layout>
@@ -22,7 +22,7 @@ const BlogPage = props => {
     </Layout>
   )
 }
-export default BlogPage
+export default ProjectPage
 export const listQuery = graphql`
   query ListQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
@@ -31,10 +31,11 @@ export const listQuery = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 200)
           frontmatter {
             date(formatString: "MMMM Do, YYYY")
             title
+            github
           }
         }
       }

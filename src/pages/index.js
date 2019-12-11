@@ -48,12 +48,12 @@ const IndexPage = () => (
       <div className="section">
         <p className="section-label">My Story</p>
         <p className="section-content">
-          Hi, I'm <strong>Kevin</strong>! I'm a <strong>web developer</strong>{' '}
-          and <strong>designer</strong> from the great state of Texas. For the
-          last eight years I've been proudly serving in the United States Navy,
-          based in Yokosuka, Japan as a Radar Systems Technician, Weapon Systems
-          Technician, Explosives Safety Manager, Instructional Designer, and
-          Instructor.
+          Hi, I'm <strong>Kevin</strong>! I'm a{' '}
+          <strong>software engineer</strong> from the great state of Texas. For
+          the last eight years I've been proudly serving in the United States
+          Navy, based in Yokosuka, Japan as a Radar Systems Technician, Weapon
+          Systems Technician, Explosives Safety Manager, Instructional Designer,
+          and Instructor.
           <br />
           <br />
           My love for development came when I was given the opportunity to look
@@ -61,8 +61,8 @@ const IndexPage = () => (
           feedback on future features. From that moment, I stuck my head in the
           books and began studying the <strong>Ruby</strong> programming
           language, and enrolled in school to obtain a Bachelors of Science in
-          Computer Science, all while being a top perfomer and innovator in my
-          current role.
+          Computer Science, all while being a top performer and innovator in my
+          field.
           <br />
           <br />
           The challenge of software engineering and design have both become my{' '}
@@ -81,26 +81,16 @@ const IndexPage = () => (
           HTML, CSS, SCSS
         </p>
         <p className="section-content">
-          <span className="section-skill-label">Back-End:</span> Node, Java,
-          PHP, Ruby
+          <span className="section-skill-label">Back-End:</span> Ruby,
+          Javascript, Java, PHP
         </p>
         <p className="section-content">
           <span className="section-skill-label">Frameworks:</span> Express,
-          Laravel
+          Laravel, Ruby on Rails
         </p>
         <p className="section-content">
           <span className="section-skill-label">Libraries:</span> React, Vue
         </p>
-      </div>
-
-      <div className="section">
-        <p className="section-label">Resume</p>
-        <a href="#">Download Resume</a>
-      </div>
-
-      <div className="section">
-        <p className="section-label">Projects</p>
-        <p className="section-content">Coming soon ...</p>
       </div>
     </div>
   </Layout>
