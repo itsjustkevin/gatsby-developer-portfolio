@@ -1,45 +1,108 @@
 ---
-title: 'Seaport Tracker'
-description: Tracker for shipping port activity, demonstrating concurrency through the use of queues and jobs.
-date: '2019-12-10T0900'
+title: 'Quizmate'
+description: A REST/GraphQL API experiment delivering trivia questions.
+date: '2019-12-11T0900'
 image: Capture.PNG
-github: https://github.com/itsjustkevin/Shipping-Tracker
+github: https://github.com/itsjustkevin/Quizmate
 ---
 
-### Introduction
+## Introduction
 
-During my time in the Navy, I have always wondered how everything was managed at a sea port. Ships, Cargo and Personnel are all tracked entering and leaving any seaport in the world.<br /><br />
+Quizmate is a thought experiment, attempting to build a REST API and a GraphQL API attached to a single source of data. <br /><br />
 
 ### Technologies Used
 
-**Java**
-<br /><br />
+**PHP**<br />
+**Laravel**<br />
+**PostgreSQL**<br />
+**GraphQL**<br />
+**Lighthouse**<br />
+<br />
 
-### Description
+### API Usage
 
-This project takes that idea and visually simulates the operations management of a seaport! The project serves as practice for handling concurrency by running job through queues in the realm of Object Oriented Programming with Java.<br /><br />
+<br />
 
-### User Guide:
+#### Questions
 
-To run the program the user must follow the following steps.
+**Url:** /api/questions
 
-1. Ensure Java is installed on your computer.
-2. Clone the repository.
-3. Open the Command Prompt (Windows) or Terminal(MacOS / Linux) and navigate to the directory where the program was downloaded using the “cd” command.
-4. Once in the directory, navigate to the folder containing “SeaPortProgram.java”.
-5. In your terminal type `javac SeaPortProgram`.
-   There are test files added for your convenience in the "test-files" directory to test the program for all functions before generating your own files to be used by the program.<br /><br />
+value(int): All questions with the requested value.
 
-### Lessons Learned:
+category(string): All questions in the requested category.<br /><br />
 
-- I need to do some refactoring. Some of the methods implemented into the project are there just to make things easier for me and could be added in a more constructive way that falls in line with SOLID principles. My methods to read and parse the text files work just fine in the SeaPortProgram class, but they could be added to their own class that specifically deals with parsing files, which falls under the single responsibility principle of SOLID. Some methods in my World class are there for the purpose of searching, when searching is a different function that should be reserved to a class called searcher or an interface such as Searchable.<br /><br />
+##### Example Query
 
-- I still need to fully learn and understand the Java API. After doing more research, I found libraries that could have made this toy project easier to complete.<br /><br />
+```
+https://quiz-mate-api.herokuapp.com/api/questions?value=100
+https://quiz-mate-api.herokuapp.com/api/questions?category=movies
+```
 
-- I spent a lot of time looking up naming conventions for certain types of classes. Looking into the naming conventions for comparators I learned that there is no set convention. Other engineers typically name them like ThingComparatorByWeight. I looked into naming conventions for all of my classes and noticed that the interfaces should be named (verb)able.<br /><br />
+<br />
 
-- My first iteration of the ThingComparator classes was actually split into a class for each comparison. ThingComparatorByName, ThingComparatorByWeight, etc. I quickly realized that I had to make a tradeoff between sticking to the single responsibility principle or sticking to the DRY model (Do not Repeat Yourself). I decided to throw a switch statement into a single ThingComparator class since the original method would be strange due to the code being very similar.<br /><br />
+#### Categories
 
-- Through all the research I did on concurrency, I have not found a way yet to make the program run at a faster rate. It uses too many resources and there should be some way to throttle the program so that I could access other resources on the computer.<br /><br />
+**Url:** /api/categories
 
-- Dynamically adding GUI elements is not as difficult as I once assumed. It is the technique that I used when adding each job as their own component. It is similar to using a library like Vue, React,or Angular to create reusable components.<br />
+##### Example Query
+
+```
+https://quiz-mate-api.herokuapp.com/api/categories
+```
+
+<br />
+
+#### GraphQL
+
+**Url:** /GraphQL-playground
+
+##### Example Query 1
+
+```
+{
+  allCategories {
+    name
+  }
+}
+```
+
+<br />
+
+##### Example Query 2
+
+```
+{
+  category(id:9) {
+    name
+  }
+}
+```
+
+<br />
+
+##### Example Query 3
+
+```
+{
+  category(id:9) {
+    name
+    questions {
+      question_text
+      answer_text
+      value
+  }
+}
+```
+
+<br />
+
+### Lessons Learned
+
+- GraphQL APIs are much more difficult to implement throttling on. I have been researching some methods to get it done, but the implementation is not as simple as with REST APIs.
+- A token based authentication system would have worked well for a project like this.
+- Creating a separate front-end in Vue or React would have made for more simple GraphQL queries.
+- If clients were originally using my REST API, it would have been a fiasco, as I changed too much. I could have approached it with a better solution for versioning such as "test.com/api/v1/questions" which would have made for an easier transition if I had to make a version 2 of the API.<br /><br />
+
+### Final Thoughts
+
+This most important thing I learned through this project is to thoroughly plan before implementing anything. A proper plan would have made building the REST and GraphQL schemas painless.
